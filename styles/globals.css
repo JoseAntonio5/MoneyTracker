@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #fffffe;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.blue-gradient {
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+/* NAVBAR */
+
+nav {
+  background-color: #22c55e;
+  color: #f0f0f0;
+}
+
+.navbar {
+  padding: 0 10%;
+}
+
+.nav-logo {
+  font-size: 2.4rem;
+}
+
+.nav-link {
+  list-style-type: none;
+}
+
+.nav-link li {
+  font-size: 1.3rem;
+}
+
+.nav-btn {
+  font-size: 2rem;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+/* HOME PAGE */
+
+.Home-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-left {
+  width: 50%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  padding: 0 4rem;
+}
+
+.hero-right {
+  background-image: url('/assets/bg-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.Info-section {
+  width: 100%;
+  height: 80vh;
+}
+
+.info-left {
+  background-image: url('/assets/info-section-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.info-right {
+  width: 50%;
+  height: 100%;
+}
+
+.Features-section {
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(241, 241, 241);
+}
+
+.dashboard-form {
+  transform: translateY(45px);
+}
+
+@media only screen and (max-width: 1024px) {
+
+  /* NAVBAR */
+
+.nav-link li {
+  font-size: 2.4rem;
+}
+  
+  .nav-btn {
+    display: contents;
+  }
+
+  .sign-in-btn {
+    background-color: rgb(29 78 216);
+    color: #fff;
+  }
+
+  .nav-link {
+    position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		transition: 1s;
+    transform: translateY(-100vh);
+  }
+
+  .responsive-nav {
+    transform: none;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+  }
+
+  .nav-close-btn {
+    position: absolute !important;
+    font-size: 3rem;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  /* HERO SECTION */
+
+  .hero-main-text {
+    font-size: 3rem;
+  }
+
+  .hero-subtext {
+    font-size: 1.1rem;
+  }
+
+  /* INFO SECTION */
+
+  .info-right > h1 {
+    font-size: 2.4rem;
+    margin-top: 5rem;
+  }
+
+  .info-right > h3 {
+    font-size: 1.5rem;
+  }
+
+  .info-right > p {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  /* FEATURES SECTION */
+
+  .features-section,
+  .features-cards {
+    flex-direction: column;
+  }
+
+  .features-cards {
+    gap: 2rem;
+  }
+
+  .features-text-bottom {
+    padding: 2rem 0;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* HERO SECTION */
+
+  .Home-content {
+    flex-direction: column;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+  }
+
+  .hero-left > form > input {
+    width: 100%;
+  }
+
+  /* INFO SECTION */
+
+  .Info-section {
+    flex-direction: column;
+  }
+
+  .info-left, .info-right {
+    width: 100%;
+  }
+
+  .info-right > h1 {
+    font-size: 2rem;
+  }
+
+  .info-left {
+    display: none;
+  }
+
+  /* FEATURES SECTION */
+
+  .features-text-title {
+    font-size: 2.2rem;
+    padding: 1rem 0 2rem 0;
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+  .nav-logo {
+    font-size: 2rem;
+  }
+
+  .hero-main-text {
+    font-size: 2rem;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+  }
+
+  .info-right > h1 {
+    margin: 0;
+  }
+
+  .hero-right-card {
+    width: 80%;
+  }
+
+  .dashboard-form {
+    flex-direction: column;
+  }
+
+  .dashboard-form > input {
+    width: 100%;
+  }
+
+  .dashboard-form > input[type="radio"] {
+    width: 16px;
+    height: 16px;
+  }
+
+  .dashboard-btn {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .dashboard-money-info {
+    flex-direction: column;
+  }
+
+  .dashboard-row {
+    flex-direction: column;
+  }
+}
