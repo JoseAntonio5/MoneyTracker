@@ -23,7 +23,7 @@ function Home() {
           <p className="text-xs text-slate-500 pt-2">Enter your email above and join our newsletter now!</p>
         </div>
         <div className="hero-right flex flex-col items-center justify-center">
-          <div className="hero-right-card bg-white w-1/2 h-auto rounded-lg">
+          <div className="hero-right-card bg-white w-1/2 h-auto rounded-lg shadow-xl">
             <h1 className="text-3xl font-bold text-center pt-5">Sign Up Now!</h1>
             <form className="flex flex-col p-16">
               <label htmlFor="name" className="text-lg">Your Name:</label>
