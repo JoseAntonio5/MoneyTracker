@@ -178,7 +178,7 @@ function Dashboard() {
                     <div className="flex gap-2 items-center flex-col w-11/12 m-auto">
                         {
                             database.length === 0
-                            ? <h1>You have no rows created yet.</h1>
+                            ? <h1 className="pt-16 text-xl">You have no transactions added yet.</h1>
                             : database.map((item, index) => (
                                 <Row
                                     key={index}

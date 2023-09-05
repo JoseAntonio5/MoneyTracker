@@ -16,7 +16,7 @@ const roboto = Roboto({
 
 export const metadata = {
     title: 'Money Tracker App',
-    description: 'Your money track app', // FIX THIS
+    description: 'Your money track app',
     // icons: {
     //     icon: '../public/favicon.svg'
     // }

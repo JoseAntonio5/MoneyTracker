@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Card from "@/components/Card";
+import Card from "../components/Card";
 import { FaArrowRight } from 'react-icons/fa';
 
 function Home() {
