@@ -281,7 +281,15 @@ nav {
     flex-direction: column;
   }
 
-  .dashboard-row {
+  .mobile-div {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .mobile-div > div > h3,
+  .mobile-div > div > button {
+    margin-top: 1rem;
   }
 }

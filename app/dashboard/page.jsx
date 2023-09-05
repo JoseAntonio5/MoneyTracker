@@ -62,14 +62,24 @@ function Dashboard() {
     }
 
     const handleRowCreation = (name, value, currency, date, transactionType) => {
-        const newRow = new Transaction(name, value, currency, date, transactionType);
-        
-        try {
-            setDatabase([...database, newRow]);
-        } catch (error) {
-            console.error('Error saving to database. Try again later.')
+        if (database.length < 30) {
+            const newRow = new Transaction(name, value, currency, date, transactionType);
+    
+            try {
+                setDatabase([...database, newRow]);
+            } catch (error) {
+                console.error('Error saving to the database. Try again later.');
+            }
+        } else {
+            console.error('Database is already at maximum capacity (30 elements).');
         }
     }
+
+    const handleRowDeletion = (index) => {
+        const updatedDatabase = [...database];
+        updatedDatabase.splice(index, 1); // Remove the element at the given index
+        setDatabase(updatedDatabase);
+    };
 
     return (
         <main>
@@ -177,10 +187,19 @@ function Dashboard() {
                                     currency={item.currency}
                                     date={item.date}
                                     transactionType={item.transactionType}
+                                    onDelete={() => handleRowDeletion(index)}
                                 />
                             ))
                         }
                     </div>
+                    {
+                        database.length >= 30 && (
+                            <div className="w-full flex justify-center items-center flex-col py-32 bg-red-200 shadow-2xl">
+                                <h1 className="text-3xl text-red-600">DATABASE IS FULL</h1>
+                                <p className="py-4 text-slate-600 text-center">The maximum limit of 30 transactions has been reached. This is a mock database and does not support additional entries.</p>
+                            </div>
+                        )
+                    }
             </div>
         </main>
     )
