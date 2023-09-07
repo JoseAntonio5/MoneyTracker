@@ -32,7 +32,7 @@ function Nav() {
                     >Sign In</button>
                 </Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                    <FaTimes />
+                    <FaTimes className="absolute top-2 right-2 text-6xl" />
                 </button>
             </div>
             <button className="nav-btn" onClick={showNavbar}>

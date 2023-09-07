@@ -111,17 +111,20 @@ nav {
 
   /* NAVBAR */
 
-.nav-link li {
-  font-size: 2.4rem;
-}
+  .nav-link li {
+    font-size: 2.4rem;
+    z-index: 9999;
+  }
   
   .nav-btn {
     display: contents;
+    z-index: 9999;
   }
 
   .sign-in-btn {
     background-color: rgb(29 78 216);
     color: #fff;
+    z-index: 9999;
   }
 
   .nav-link {
@@ -137,20 +140,17 @@ nav {
 		gap: 1.5rem;
 		transition: 1s;
     transform: translateY(-100vh);
+    z-index: 9999;
   }
 
   .responsive-nav {
     transform: none;
     background-color: rgba(0, 0, 0, 0.75);
     color: #fff;
+    z-index: 9999;
   }
 
-  .nav-close-btn {
-    position: absolute !important;
-    font-size: 3rem;
-    top: 2rem;
-    right: 2rem;
-  }
+  
 
   /* HERO SECTION */
 
@@ -191,6 +191,18 @@ nav {
 
   .features-text-bottom {
     padding: 2rem 0;
+  }
+
+  .Info-section {
+    height: 100vh;
+  }
+
+  .features-section {
+    height: 100vh;
+  }
+
+  .about-bottom-text {
+    margin-top: 2rem;
   }
 
 }
@@ -234,6 +246,23 @@ nav {
   .features-text-title {
     font-size: 2.2rem;
     padding: 1rem 0 2rem 0;
+  }
+
+  .Info-section {
+    height: 100vh;
+  }
+
+  .features-section {
+    height: 100vh;
+  }
+
+  .about-page-img {
+    width: 512px;
+    height: 380px;
+  }
+
+  .about-main-text {
+    margin-top: 4rem;
   }
 
 }
@@ -291,5 +320,35 @@ nav {
   .mobile-div > div > h3,
   .mobile-div > div > button {
     margin-top: 1rem;
+  }
+
+  .about-page-img {
+    width: 288px;
+    height: 180px;
+  }
+
+  .about-main-text {
+    width: auto;
+    margin-top: 10rem;
+    padding: 0 1rem;
+  }
+
+  .about-bottom-text {
+    margin-top: 150%;
+    padding: 0 1rem;
+  }
+
+  .about-bottom-text h1 {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .features-section {
+    margin-top: 6rem;
+  }
+
+  .about-bottom-text {
+    margin-top: 250%;
   }
 }
