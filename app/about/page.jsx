@@ -7,7 +7,7 @@ function About() {
       <h1 className="text-5xl font-bold pt-10 text-center bg-emerald-100">About MoneyTracker</h1>
       <div className='w-full h-80 bg-emerald-100'></div>
       <Image 
-        src='/assets/card-img1.jpg'
+        src='/assets/about-page-img.jpg'
         width={736}
         height={736}
         alt='about page img'
