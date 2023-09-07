@@ -28,10 +28,9 @@ function Row({ name, value, currency, date, transactionType, onDelete }) {
                 <div className="flex flex-col w-1/6">
                     <h3 className="text-sm text-black">{currency}:</h3>
                     <p className="text-lg font-bold">
-                        {
-                            value.length < 20
+                        {typeof value === 'string' && value.length < 20
                             ? value
-                            : `${value.slice(0,20)}...`
+                            : `${String(value).slice(0, 20)}...`
                         }
                     </p>
                 </div>
