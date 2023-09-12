@@ -4,7 +4,7 @@ The best way to keep track of your finances! Track. Manage. Prosper. MoneyTracke
 
 ### Live Project 🌐
 #### Check it by yourself:
-⚠ Coming soon... ⚠
+https://money-tracker-tau.vercel.app/
 
 ## About the project
 The best way to keep track of your finances! MoneyTracker is a project developed using ReactJS, with NextJS framework
