@@ -48,7 +48,7 @@ function Home() {
         <div className="info-right p-8">
           <h1 className="text-7xl font-extrabold">The best way to keep track of your finances!</h1>
           <h3 className="text-gray-400 text-2xl pt-4"><span className="font-bold">MoneyTracker</span> makes it easy to keep control of your money.</h3>
-          <p className="text-justify mt-16 text-xl">MoneyTracker is your ultimate financial companion for <span className="font-bold">smart</span> money management. Whether you&apos;re striving to achieve your financial goals, save more, or gain a clearer understanding of your financial picture, MoneyTracker is here to <span className="font-bold">empower</span> you every step of the way.</p>
+          <p className="text-justify mt-5 text-xl">MoneyTracker is your ultimate financial companion for <span className="font-bold">smart</span> money management. Whether you&apos;re striving to achieve your financial goals, save more, or gain a clearer understanding of your financial picture, MoneyTracker is here to <span className="font-bold">empower</span> you every step of the way.</p>
           <p className="text-justify mt-5 text-xl">At MoneyTracker, we believe that <span className="font-bold">effective money management</span> is key to a secure and prosperous future. Our user-friendly platform allows you to effortlessly record both your expenses and incomes, giving you a comprehensive view of your financial transactions. With insightful graphs and reports, you can analyze your spending patterns, identify areas for improvement, and make informed decisions about your money.</p>
         </div>
       </div>
